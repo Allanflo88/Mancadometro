@@ -1,0 +1,7 @@
+{
+  "name": "mancadometro",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "ionic-angular"
+}
