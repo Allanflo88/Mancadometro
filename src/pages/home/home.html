@@ -1,0 +1,13 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title class="center-title"> Mancadômetro </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <div class="center-content">
+    <h3 class="contador">Mancadas: {{ mancada.nMancadas }}</h3>
+    <button ion-button full (click)="increaseMancadas()">Mancada</button>
+    <button ion-button full (click)="goToHistorico()">Histórico</button>
+  </div>
+</ion-content>

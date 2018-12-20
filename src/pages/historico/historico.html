@@ -1,0 +1,17 @@
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Histórico</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list>
+    <ion-item *ngFor="let mancada of mancadas">
+      <h3>{{mancada.date}}</h3>
+      <ion-badge>{{mancada.nMancadas}}</ion-badge>
+    </ion-item>
+  </ion-list>
+</ion-content>
