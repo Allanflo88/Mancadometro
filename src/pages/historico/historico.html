@@ -10,8 +10,8 @@
 <ion-content padding>
   <ion-list>
     <ion-item *ngFor="let mancada of mancadas">
-      <h3>{{mancada.date}}</h3>
-      <ion-badge>{{mancada.nMancadas}}</ion-badge>
+      <h3 item-start>{{mancada.date}}</h3>
+      <ion-badge item-end color="danger">{{mancada.nMancadas}}</ion-badge>
     </ion-item>
   </ion-list>
 </ion-content>
