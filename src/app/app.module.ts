@@ -10,12 +10,14 @@ import { MyApp } from './app.component';
 import { HomePage } from '../pages/home/home';
 import { StorageProvider } from '../providers/storage/storage';
 import { HistoricoPage } from '../pages/historico/historico';
+import { HistoricoFiltroPage } from '../pages/historico-filtro/historico-filtro';
 
 @NgModule({
   declarations: [
     MyApp,
     HomePage,
-    HistoricoPage
+    HistoricoPage,
+    HistoricoFiltroPage
   ],
   imports: [
     BrowserModule,
@@ -26,7 +28,8 @@ import { HistoricoPage } from '../pages/historico/historico';
   entryComponents: [
     MyApp,
     HomePage,
-    HistoricoPage
+    HistoricoPage,
+    HistoricoFiltroPage
   ],
   providers: [
     StatusBar,

@@ -46,4 +46,12 @@ export class StorageProvider {
     })
   }
 
+  filterByDate(date:String){
+    return new Promise((resolve,reject)=>{
+      this.storage.get("mancadas_" + date).then((res)=>{
+        resolve(res)
+      })
+    })
+  }
+
 }
