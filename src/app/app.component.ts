@@ -17,9 +17,9 @@ export class MyApp {
       // Here you can do any higher level native things you might need.
       statusBar.styleDefault();
       splashScreen.hide();
-      badge.hasPermission().then((res)=>{
+      this.badge.hasPermission().then((res)=>{
         if(!res){
-          badge.requestPermission()
+          this.badge.requestPermission()
         }
       })
     });
