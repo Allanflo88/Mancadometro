@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams, ViewController } from 'ionic-angular';
 import moment from 'moment';
+import Filtro from '../../app/models/filtro';
 
 
 /**
@@ -17,17 +18,41 @@ import moment from 'moment';
 })
 export class HistoricoFiltroPage {
 
-  date = moment().toISOString();
+  date: string = moment().toISOString();
+
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private view: ViewController) {
   }
 
-  close(value){
+  close(value?){
     this.view.dismiss(value);
   }
 
   aplicarFiltro(){
-    this.close(moment(this.date).format("DD-MM-YYYY"));
+    var TIPOS_FILTRO = {
+      LIMPAR: 0,
+      DATE: 1
+    }
+
+    var filtro: Filtro = {
+      tipo: TIPOS_FILTRO.DATE,
+      filtro: moment(this.date).format("DD-MM-YYYY")
+    };
+    this.close(filtro);
+  }
+
+  limparFiltro(){
+    var TIPOS_FILTRO = {
+      LIMPAR: 0,
+      DATE: 1
+    }
+
+    var filtro: Filtro = {
+      tipo: TIPOS_FILTRO.LIMPAR,
+      filtro: null
+    }
+    
+    this.close(filtro);
   }
 
 }

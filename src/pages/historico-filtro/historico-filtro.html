@@ -1,13 +1,21 @@
 <ion-header>
-
   <ion-navbar color="primary">
+    <ion-buttons start>
+      <button ion-button icon-only color="royal" (click)="close()">
+        <ion-icon name="close"></ion-icon>
+      </button>
+    </ion-buttons>
     <ion-title text-center>Filtrar</ion-title>
   </ion-navbar>
-
 </ion-header>
 
 <ion-content padding>
   <label>Data</label>
-  <ion-datetime displayFormat="DD-MM-YYYY" pickerFormat="DD MM YYYY" [(ngModel)]="date"></ion-datetime>
+  <ion-datetime
+    displayFormat="DD-MM-YYYY"
+    pickerFormat="DD MM YYYY"
+    [(ngModel)]="date"
+  ></ion-datetime>
   <button ion-button full (click)="aplicarFiltro()">Aplicar</button>
+  <button ion-button full color="danger" (click)="limparFiltro()">Limpar</button>
 </ion-content>

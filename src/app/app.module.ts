@@ -34,7 +34,7 @@ import { HistoricoFiltroPage } from '../pages/historico-filtro/historico-filtro'
   providers: [
     StatusBar,
     SplashScreen,
-    {provide: ErrorHandler, useClass: IonicErrorHandler},
+    { provide: ErrorHandler, useClass: IonicErrorHandler },
     StorageProvider,
     Badge
   ]
