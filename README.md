@@ -5,3 +5,8 @@ Este é um projeto que possui a finalidade de contabilizar e criar estatísticas
 
 - Ionic v3.0 ou superior;
 - Node v8.9 ou superior;
+
+## Rodando
+
+- npm install
+- ionic serve
