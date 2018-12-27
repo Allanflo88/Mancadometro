@@ -1,8 +1,8 @@
 <?xml version='1.0' encoding='utf-8'?>
-<widget id="io.ionic.starter" version="0.0.1" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
+<widget id="io.ionic.starter" version="0.9.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0">
     <name>Mancadômetro</name>
-    <description>An awesome Ionic/Cordova app.</description>
-    <author email="hi@ionicframework" href="http://ionicframework.com/">Ionic Framework Team</author>
+    <description>Este é um projeto que possui a finalidade de contabilizar e criar estatísticas relacionadas as famosas "mancadas" muitas vezes "dadas" por nós.</description>
+    <author email="allanfloresdejesus@hotmail.com" >Allan Flores de jesus</author>
     <content src="index.html" />
     <access origin="*" />
     <allow-intent href="http://*/*" />
@@ -84,7 +84,6 @@
     <plugin name="cordova-plugin-ionic-keyboard" spec="^2.0.5" />
     <plugin name="cordova-sqlite-storage" spec="2.6.0" />
     <plugin name="cordova-plugin-badge" spec="0.8.8" />
-    <engine name="android" spec="7.1.4" />
     <plugin name="cordova-plugin-ionic" spec="5.2.9">
         <variable name="APP_ID" value="b7d45ebf" />
         <variable name="CHANNEL_NAME" value="Master" />
@@ -93,4 +92,5 @@
         <variable name="MAX_STORE" value="2" />
         <variable name="MIN_BACKGROUND_DURATION" value="30" />
     </plugin>
+    <engine name="android" spec="7.1.4" />
 </widget>
