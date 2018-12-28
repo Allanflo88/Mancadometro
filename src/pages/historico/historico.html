@@ -5,7 +5,7 @@
 
     <ion-buttons end>
       <button ion-button icon-only color="royal" (click)="openFiltro()">
-        <ion-icon name="funnel"></ion-icon>
+        <ion-icon name="ios-funnel"></ion-icon>
       </button>
     </ion-buttons>
 
@@ -20,7 +20,7 @@
       <ion-badge item-end color="danger">{{mancada.nMancadas}}</ion-badge>
     </ion-item>
   </ion-list>
-  <div *ngIf="mancadas.length == 0" text-center>
+  <div *ngIf="mancadas.length == 0" text-center class="center-message">
     <ion-icon name="happy"></ion-icon>
     <p>
       Não há mancadas

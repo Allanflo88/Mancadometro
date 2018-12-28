@@ -1,6 +1,11 @@
 <ion-header>
   <ion-navbar color="primary">
     <ion-title text-center> Mancadômetro </ion-title>
+    <ion-buttons end>
+      <button ion-button icon-only color="royal" (click)="goToHistorico()">
+        <ion-icon name="md-list-box"> </ion-icon>
+      </button>
+    </ion-buttons>
   </ion-navbar>
 </ion-header>
 
@@ -8,6 +13,5 @@
   <div class="center-content">
     <h3 class="contador">Mancadas: {{ mancada.nMancadas }}</h3>
     <button ion-button full (click)="increaseMancadas()">Mancada</button>
-    <button ion-button full (click)="goToHistorico()">Histórico</button>
   </div>
 </ion-content>
