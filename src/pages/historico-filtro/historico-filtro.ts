@@ -19,6 +19,7 @@ import Filtro from '../../app/models/filtro';
 export class HistoricoFiltroPage {
 
   date: string = moment().toISOString();
+  maxDate: string = moment(this.date).format("YYYY-MM-DD");
 
 
   constructor(public navCtrl: NavController, public navParams: NavParams, private view: ViewController) {

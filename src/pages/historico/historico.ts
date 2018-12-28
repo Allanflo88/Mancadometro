@@ -26,13 +26,13 @@ export class HistoricoPage {
     this.getMancadas();
   }
 
-  getMancadas(){
+  getMancadas(): void{
     this.storage.getAll().then((res)=>{
       this.mancadas = res;
     })
   }
 
-  openFiltro(){
+  openFiltro(): void{
     let modal = this.modal.create(HistoricoFiltroPage);
     modal.present();
     modal.onDidDismiss((res)=>{
@@ -40,7 +40,7 @@ export class HistoricoPage {
     })
   }
 
-  filtrarMancadas(filtro: Filtro){
+  filtrarMancadas(filtro: Filtro): void{
     var TIPOS_FILTRO = {
       LIMPAR: 0,
       DATE: 1
@@ -61,9 +61,14 @@ export class HistoricoPage {
 
   }
 
-  getByDate(filtro){
+  getByDate(filtro): void{
     this.storage.filterByDate(filtro).then((res:Mancada)=>{
-      this.mancadas.push(res);
+      if(res){
+        this.mancadas.push(res);
+      }
+      else{
+        this.mancadas = [];
+      }
     })
   }
 
