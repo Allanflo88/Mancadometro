@@ -28,6 +28,9 @@ export class HomePage {
         this.mancada = res;
         this.badge.set(res.nMancadas);
       }
+      else{
+        this.badge.set(this.mancada.nMancadas);
+      }
     }).catch((err)=>{
       this.alert.create({
         title: "Ops...",
